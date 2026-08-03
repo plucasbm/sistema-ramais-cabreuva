@@ -20,7 +20,7 @@ const UNIDADES_MOCK: ReadonlyArray<{ id: number; nome: string; total: number; on
 
 export function gerarUnidadesMock(): UnidadeRamaisStatus[] {
   return UNIDADES_MOCK.map(({ id, nome, total, online }) => ({
-    id,
+    id: id.toString(),
     nome,
     totalRamais: total,
     ramaisOnline: online,
